@@ -1,0 +1,633 @@
+m
+2 Limits and Derivatives
+IN A PREVIEW OF CALCULUS (immediately preceding Chapter 1) we saw how the idea of a limit 
+underlies the various branches of calculus. It is therefore appropriate to begin our study of calculus 
+by investigating limits and their properties. The special type of limit that is used to find tangents 
+and velocities gives rise to the central idea in differential calculus, the derivative.
+78 CHAPTER 2 Limits and Derivatives
+The Tangent and Velocity Problems
+In this section we see how limits arise when we attempt to find the tangent to a curve or 
+the velocity of an object.
+■	 The Tangent Problem
+The word tangent is derived from the Latin word tangens, which means “touching.” We 
+can think of a tangent to a curve as a line that touches the curve and follows the same 
+direction as the curve at the point of contact. How can this idea be made precise?
+For a circle we could simply follow Euclid and say that a tangent is a line  that intersects the circle once and only once, as in Figure 1(a). For more complicated curves this 
+definition is inadequate. Figure l(b) shows a line  that appears to be a tangent to the 
+curve C at point P, but it intersects C twice.
+To be specific, let’s look at the problem of trying to find a tangent line  to the parabola y − x 2
+ in the following example.
+EXAMPLE 1 Find an equation of the tangent line to the parabola y − x 2
+ at the 
+point Ps1, 1d.
+SOLUTION We will be able to find an equation of the tangent line  as soon as we 
+know its slope m. The difficulty is that we know only one point, P, on , whereas 
+we need two points to compute the slope. But observe that we can compute an 
+approximation to m by choosing a nearby point Qsx, x 2 d on the parabola (as in 
+Figure 2) and computing the slope mPQ of the secant line PQ. (A secant line, from 
+the Latin word secans, meaning cutting, is a line that cuts [intersects] a curve more 
+than once.)
+We choose x ± 1 so that Q ± P. Then
+mPQ − x 2 2 1
+x 2 1
+For instance, for the point Qs1.5, 2.25d we have
+mPQ − 2.25 2 1
+1.5 2 1 − 1.25
+0.5 − 2.5
+The tables in the margin show the values of mPQ for several values of x close to 1. The 
+closer Q is to P, the closer x is to 1 and, it appears from the tables, the closer mPQ is 
+to 2. This suggests that the slope of the tangent line  should be m − 2.
+We say that the slope of the tangent line is the limit of the slopes of the secant lines, 
+and we express this symbolically by writing
+lim
+QlP mPQ − m    and    lim
+xl1
+x 2 2 1
+x 2 1 − 2
+Assuming that the slope of the tangent line is indeed 2, we use the point-slope form 
+of the equation of a line [ y 2 y1 − msx 2 x1d, see Appendix B] to write the equation 
+of the tangent line through s1, 1d as
+y 2 1 − 2sx 2 1d    or    y − 2x 2 1 ■
+2.1
+(a)
+(b)
+L
+P
+C L
+FIGURE 1
+x
+y
+0
+y=≈
+L Q{x, ≈}
+P(1, 1)
+FIGURE 2
+x mPQ
+2 3
+1.5 2.5
+1.1 2.1
+1.01 2.01
+1.001 2.001
+x mPQ
+0 1
+0.5 1.5
+0.9 1.9
+0.99 1.99
+0.999 1.999
+SECTION 2.1  The Tangent and Velocity Problems 79
+Figure 3 illustrates the limiting process that occurs in Example 1. As Q approaches P
+along the parabola, the corresponding secant lines rotate about P and approach the tangent line .
+Q approaches P from the right
+Q approaches P from the left
+P
+y
+0 x
+Q
+P
+y
+0 x
+Q
+P
+y
+0 x
+Q P
+y
+x
+Q
+P
+y
+0 x
+Q
+0 x
+P
+y
+Q L L L
+L L L
+Many functions that occur in the sciences are not described by explicit equations; they 
+are defined by experimental data. The next example shows how to estimate the slope of 
+the tangent line to the graph of such a function.
+EXAMPLE 2 A pulse laser operates by storing charge on a capacitor and releasing it 
+suddenly when the laser is fired. The data in the table describe the charge Q remaining 
+on the capacitor (measured in coulombs) at time t (measured in seconds after the laser 
+is fired). Use the data to draw the graph of this function and estimate the slope of the 
+tangent line at the point where t − 0.04. (Note: The slope of the tangent line represents 
+the electric current flowing from the capacitor to the laser [measured in amperes].)
+SOLUTION In Figure 4 we plot the given data and use these points to sketch a curve 
+that approximates the graph of the function.
+Q
+10
+8
+6
+4
+0 0.02 0.04 0.06 0.08 0.1 t (seconds)
+(coulombs)
+FIGURE 3
+t Q
+0 10
+0.02 8.187
+0.04 6.703
+0.06 5.488
+0.08 4.493
+0.1 3.676
+FIGURE 4
+80 CHAPTER 2 Limits and Derivatives
+Given the points Ps0.04, 6.703d and Rs0, 10d on the graph, we find that the slope of 
+the secant line PR is
+mPR − 10 2 6.703
+0 2 0.04 − 282.425
+The table at the left shows the results of similar calculations for the slopes of other 
+secant lines. From this table we would expect the slope of the tangent line at t − 0.04
+to lie somewhere between 274.20 and 260.75. In fact, the average of the slopes of the 
+two closest secant lines is
+1
+2 s274.20 2 60.75d − 267.475
+So, by this method, we estimate the slope of the tangent line to be about 267.5.
+Another method is to draw an approximation to the tangent line at P and measure 
+the sides of the triangle ABC, as in Figure 5.
+t
+Q
+A
+B C
+P
+0 0.02 0.04 0.06 0.08 0.1
+9
+10
+6
+7
+8
+5
+(seconds)
+(coulombs)
+This gives an estimate of the slope of the tangent line as
+2 | AB|
+| BC| < 2 8.0 2 5.4
+0.06 2 0.02 − 265.0 ■
+■ The Velocity Problem
+If you watch the speedometer of a car as you drive in city traffic, you see that the speed 
+doesn’t stay the same for very long; that is, the velocity of the car is not constant. We 
+assume from watching the speedometer that the car has a definite velocity at each 
+moment, but how is the “instantaneous” velocity defined?
+Let’s consider the velocity problem: Find the instantaneous velocity of an object moving along a straight path at a specific time if the position of the object at any time is 
+known. In the next example, we investigate the velocity of a falling ball. Through experiments carried out four centuries ago, Galileo discovered that the distance fallen by any 
+freely falling body is proportional to the square of the time it has been falling. (This 
+model for free fall neglects air resistance.) If the distance fallen after t seconds is denoted 
+by sstd and measured in meters, then (at the earth’s surface) Galileo’s observation is 
+expressed by the equation
+sstd − 4.9t
+2
+R mPR
+(0, 10) 282.425
+(0.02, 8.187) 274.200
+(0.06, 5.488) 260.750
+(0.08, 4.493) 255.250
+(0.1, 3.676) 250.450
+FIGURE 5
+The physical meaning of the answer 
+in Example 2 is that the electric 
+current flowing from the capacitor to 
+the laser after 0.04 seconds is about 
+265 amperes.
+SECTION 2.1  The Tangent and Velocity Problems 81
+XAMPLE 3 Suppose that a ball is dropped from the upper observation deck of 
+he CN Tower in Toronto, 450 m above the ground. Find the velocity of the ball after 
+ seconds.
+OLUTION The difficulty in finding the instantaneous velocity at 5seconds is that 
+e are dealing with a single instant of time st − 5d, so no time interval is involved. 
+owever, we can approximate the desired quantity by computing the average velocity 
+ver the brief time interval of a tenth of a second from t − 5 to t − 5.1:
+ average velocity − change in position
+time elapsed
+− ss5.1d 2 ss5d
+0.1
+− 4.9s5.1d
+2 2 4.9s5d
+2
+0.1 − 49.49 mys
+he following table shows the results of similar calculations of the average velocity 
+over successively smaller time periods.
+Time interval Average velocity smysd
+5 < t < 5.1 49.49
+5 < t < 5.05 49.245
+5 < t < 5.01 49.049
+5 < t < 5.001 49.0049
+It appears that as we shorten the time period, the average velocity is becoming closer to 
+49mys. The instantaneous velocity when t − 5 is defined to be the limiting value of 
+these average velocities over shorter and shorter time periods that start at t − 5. Thus it 
+appears that the (instantaneous) velocity after 5seconds is 49 mys. ■
+You may have the feeling that the calculations used in solving this problem are very 
+similar to those used earlier in this section to find tangents. In fact, there is a close connection between the tangent problem and the velocity problem. If we draw the graph of 
+the distance function of the ball (as in Figure 6) and we consider the points Ps5, 4.9s5d 2 d
+and Qs5 1 h, 4.9s5 1 hd
+2 d on the graph, then the slope of the secant line PQ is
+mPQ − 4.9s5 1 hd
+2 2 4.9s5d 2
+s5 1 hd 2 5
+which is the same as the average velocity over the time interval f5, 5 1 hg. Therefore the 
+velocity at time t − 5 (the limit of these average velocities as h approaches 0) must be 
+equal to the slope of the tangent line at P (the limit of the slopes of the secant lines).
+Examples 1 and 3 show that in order to solve tangent and velocity problems we must 
+be able to find limits. After studying methods for computing limits in the next five secFIGURE 6 tions, we will return to the problems of finding tangents and velocities in Section 2.7.
+t
+s
+Q
+0 5 5+h
+slope of secant line
+ average velocity
+P
+s=4.9t@
+t
+s
+slope of tangent line
+ instantaneous velocity P
+s=4.9t@
+0 5
+Steve Allen / Stockbyte / Getty Images
+CN Tower in Toronto
+82 CHAPTER 2 Limits and Derivatives
+2.1 Exercises
+1. A tank holds 1000 liters of water, which drains from the 
+bottom of the tank in half an hour. The values in the table 
+show the volume V of water remaining in the tank (in liters) 
+after t minutes.
+t smind 5 10 15 20 25 30
+V sLd 694 444 250 111 28 0
+(a) If P is the point s15, 250d on the graph of V, find the 
+slopes of the secant lines PQ when Q is the point on the 
+graph with t − 5, 10, 20, 25, and 30.
+(b) Estimate the slope of the tangent line at P by averaging 
+the slopes of two secant lines.
+(c) Use a graph of V to estimate the slope of the tangent line 
+at P. (This slope represents the rate at which the water is 
+flowing from the tank after 15 minutes.)
+2. A student bought a smartwatch that tracks the number of 
+steps she walks throughout the day. The table shows the number of steps recorded t minutes after 3:00 pm on the first day 
+she wore the watch.
+t smind 0 10 20 30 40
+Steps 3438 4559 5622 6536 7398
+(a) Find the slopes of the secant lines corresponding to the 
+given intervals of t. What do these slopes represent?
+(i) [0, 40] (ii) [10, 20] (iii) [20, 30]
+(b) Estimate the student’s walking pace, in steps per minute, 
+at 3:20 pm by averaging the slopes of two secant lines.
+3. The point Ps2, 21d lies on the curve y − 1ys1 2 xd.
+(a) If Q is the point sx, 1ys1 2 xdd, find the slope of the 
+secant line PQ (correct to six decimal places) for the 
+following values of x:
+(i) 1.5 (ii) 1.9 (iii) 1.99 (iv) 1.999
+(v) 2.5 (vi) 2.1 (vii) 2.01 (viii) 2.001
+(b) Using the results of part (a), guess the value of the slope 
+of the tangent line to the curve at Ps2, 21d.
+(c) Using the slope from part (b), find an equation of the 
+tangent line to the curve at Ps2, 21d.
+4. The point Ps0.5, 0d lies on the curve y − cos x.
+(a) If Q is the point s x, cos xd, find the slope of the secant 
+line PQ (correct to six decimal places) for the following 
+values of x:
+(i) 0 (ii) 0.4 (iii) 0.49
+(iv) 0.499 (v) 1 (vi) 0.6
+(vii) 0.51 (viii) 0.501
+(b) Using the results of part (a), guess the value of the slope 
+of the tangent line to the curve at Ps0.5, 0d.
+(c) Using the slope from part (b), find an equation of the 
+tangent line to the curve at Ps0.5, 0d.
+(d) Sketch the curve, two of the secant lines, and the tangent 
+line.
+5. The deck of a bridge is suspended 80 meters above a river. If 
+a pebble falls off the side of the bridge, the height, in meters, 
+of the pebble above the water surface after t seconds is given 
+by y − 80 2 4.9t
+2
+. 
+(a) Find the average velocity of the pebble for the time 
+period beginning when t − 4 and lasting
+(i) 0.1 seconds (ii) 0.05 seconds (iii) 0.01 seconds
+(b) Estimate the instantaneous velocity of the pebble after 
+4 seconds.
+6. If a rock is thrown upward on the planet Mars with a velocity 
+of 10 mys, its height in meters t seconds later is given by 
+y − 10t 2 1.86t
+2
+.
+(a) Find the average velocity over the given time intervals:
+(i) [1, 2] (ii) [1, 1.5] (iii) [1, 1.1]
+(iv) [1, 1.01] (v) [1, 1.001]
+(b) Estimate the instantaneous velocity when t − 1.
+7. The table shows the position of a motorcyclist after accelerating from rest.
+t ssecondsd 0 1 2 3 4 5 6
+s (meters) 0 1.5 6.3 14.2 24.1 38.0 53.9
+(a) Find the average velocity for each time period:
+(i) f2, 4g (ii) f3, 4g (iii) f4, 5g (iv) f4, 6g
+(b) Use the graph of s as a function of t to estimate the 
+instantaneous velocity when t − 3.
+8. The displacement (in centimeters) of a particle moving back 
+and forth along a straight line is given by the equation of 
+motion s − 2 sin t 1 3 cos t, where t is measured in 
+seconds.
+(a) Find the average velocity during each time period:
+(i) f1, 2g (ii) f1, 1.1g
+(iii) f1, 1.01g (iv) f1, 1.001g
+(b) Estimate the instantaneous velocity of the particle 
+when t − 1.
+9. The point Ps1, 0d lies on the curve y − sins10yxd.
+(a) If Q is the point sx, sins10yxdd, find the slope of the 
+secant line PQ (correct to four decimal places) for x − 2,
+1.5, 1.4, 1.3, 1.2, 1.1, 0.5, 0.6, 0.7, 0.8, and 0.9. Do the 
+slopes appear to be approaching a limit?
+(b) Use a graph of the curve to explain why the slopes of the 
+secant lines in part (a) are not close to the slope of the 
+tangent line at P.
+(c) By choosing appropriate secant lines, estimate the slope 
+of the tangent line at P.
+;
+SECTION 2.2  The Limit of a Function 83
+The Limit of a Function
+Having seen in the preceding section how limits arise when we want to find the tangent 
+to a curve or the velocity of an object, we now turn our attention to limits in general and 
+numerical and graphical methods for computing them.
+■	 Finding Limits Numerically and Graphically
+Let’s investigate the behavior of the function f defined by fsxd − sx 2 1dysx 2 2 1d for 
+values of x near 1. The following table gives values of fsxd for values of x close to 1 but 
+not equal to 1.
+1 0.5
+x , 1 fsxd x . 1 fsxd
+0.5 0.666667 1.5 0.400000
+0.9 0.526316 1.1 0.476190
+0.99 0.502513 1.01 0.497512
+0.999 0.500250 1.001 0.499750
+0.9999 0.500025 1.0001 0.499975
+1 0.5
+From the table and the graph of f shown in Figure 1 we see that the closer x is to 1 
+(on either side of 1), the closer fsxd is to 0.5. In fact, it appears that we can make the 
+values of fsxd as close as we like to 0.5 by taking x sufficiently close to 1. We express 
+this by saying “the limit of the function fsxd − sx 2 1dysx 2 2 1d as x approaches 1 is 
+equal to 0.5.” The notation for this is
+lim
+xl1
+x 2 1
+x 2 2 1 − 0.5
+In general, we use the following notation.
+1
+limxla fsxd − L
+and say “the limit of fsxd, as x approaches a, equals L”
+if we can make the values of fsxd arbitrarily close to L (as close to L as we like) 
+by restricting x to be sufficiently close to a (on either side of a) but not equal to a.
+Roughly speaking, this says that the values of fsxd approach L as x approaches a. In 
+other words, the values of fsxd tend to get closer and closer to the number L as x gets 
+closer and closer to the number a (from either side of a) but x ± a. (A more precise 
+definition will be given in Section 2.4.)
+2.2
+FIGURE 1
+ƒ
+approaches
+0.5
+as x approaches 1
+0 1
+0.5
+x-1
+≈-1 y=
+y
+x
+Intuitive Definition of a Limit Suppose fsxd is defined when x is near
+the number a. (This means that f is defined on some open interval that 
+contains a, except possibly at a itself.) Then we write
+84 CHAPTER 2 Limits and Derivatives
+An alternative notation for
+lim
+xla fsxd − L
+is fsxd l L    as    x l a
+which is usually read “ fsxd approaches L as x approaches a.”
+Notice the phrase “but x not equal to a” in the definition of limit. This means that in 
+finding the limit of fsxd as x approaches a, we never consider x − a. In fact, fsxd need 
+not even be defined when x − a. The only thing that matters is how f is defined near a.
+Figure 2 shows the graphs of three functions. Note that in part (b), fsad is not defined 
+and in part (c), fsad ± L. But in each case, regardless of what happens at a, it is true 
+that limx l a fsxd − L.
+FIGURE 2 lim
+xla fsxd − L in all three cases
+(c)
+x
+y
+0
+L
+a
+(b)
+x
+y
+0
+L
+a
+(a)
+x
+y
+0
+L
+a
+EXAMPLE 1 Estimate the value of limtl0
+st 2 1 9 2 3
+t
+2 .
+SOLUTION The table lists values of the function for several values of t near 0.
+t st 2 1 9 2 3
+t
+2
+61.0 0.162277 . . .
+60.5 0.165525 . . .
+60.1 0.166620 . . .
+60.05 0.166655 . . .
+60.01 0.166666 . . .
+As t approaches 0, the values of the function seem to approach 0.1666666 . . . and so 
+we guess that
+lim
+tl0
+st 2 1 9 2 3
+t
+2 − 1
+6
+■
+In Example 1 what would have happened if we had taken even smaller values of t? The 
+table in the margin shows the results from one calculator; you can see that something 
+strange seems to be happening.
+If you try these calculations on your own calculator you might get different values, 
+but eventually you will get the value 0 if you make t sufficiently small. Does this 
+t st 2 1 9 2 3
+t
+2
+60.001 0.166667
+60.0001 0.166670
+60.00001 0.167000
+60.000001 0.000000
+SECTION 2.2  The Limit of a Function 85
+mean that the answer is really 0 instead of 1
+6 ? No, the value of the limit is 1
+6, as we will 
+show in the next section. The problem is that the calculator gave false values because 
+st 2 1 9 is very close to 3 when t is small. (In fact, when t is sufficiently small, a
+calculator’s value for st 2 1 9 is 3.000 . . . to as many digits as the calculator is 
+capable of carrying.)
+Something similar happens when we try to graph the function
+fstd − st 2 1 9 2 3
+t
+2
+of Example 1 on a graphing calculator or computer. Parts (a) and (b) of Figure 3 
+show quite accurate graphs of f , and if we trace along the curve, we can estimate 
+easily that the limit is about 1
+6. But if we zoom in too much, as in parts (c) and (d), then 
+we get inaccurate graphs, again due to rounding errors within the calculations.
+0.1
+0.2
+0.1
+0.2
+(a) _5¯t¯5 (b) _0.1¯t¯0.1 (c) _10_6¯t¯10_6 (d) _10_7¯t¯10_7
+FIGURE 3
+EXAMPLE 2 Guess the value of lim xl0
+sin x
+x .
+SOLUTION The function fsxd − ssin xdyx is not defined when x − 0. Using a calculator (and remembering that, if x [ R, sin x means the sine of the angle whose radian
+measure is x), we construct a table of values correct to eight decimal places. From the 
+table at the left and the graph in Figure 4 we guess that
+lim 
+xl0
+sin x
+x − 1
+This guess is in fact correct, as will be proved in Chapter 3 using a geometric 
+argument. 
+FIGURE 4 _1 0 1 x
+y
+sin x
+x 1 y=
+■
+www.StewartCalculus.com
+For a further explanation of why 
+calculators sometimes give false 
+values, click on Lies My Calculator 
+and Computer Told Me. In particular, see the section called The Perils 
+of Subtraction.
+x sin x
+x
+61.0 0.84147098
+60.5 0.95885108
+60.4 0.97354586
+60.3 0.98506736
+60.2 0.99334665
+60.1 0.99833417
+60.05 0.99958339
+60.01 0.99998333
+60.005 0.99999583
+60.001 0.99999983
+86 CHAPTER 2 Limits and Derivatives
+EXAMPLE 3 Find lim
+xl0 Sx 3 1
+cos 5x
+10,000 D.
+SOLUTION As before, we construct a table of values. From the first table it appears that 
+the limit might be zero.
+x x 3 1 cos 5x
+10,000
+1 1.000028
+0.5 0.124920
+0.1 0.001088
+0.05 0.000222
+0.01 0.000101
+x x 3 1 cos 5x
+10,000
+0.005 0.00010009
+0.001 0.00010000
+But if we persevere with smaller values of x, the second table suggests that the limit is 
+more likely to be 0.0001. In Section 2.5 we will be able to show that limx l 0 cos 5x − 1
+and that it follows that
+limxl0 Sx 3 1
+cos 5x
+10,000 D − 1
+10,000 − 0.0001 ■
+■	One-Sided Limits
+The Heaviside function H is defined by
+Hstd − H
+0
+1
+if t , 0
+if t > 0
+(This function is named after the electrical engineer Oliver Heaviside [1850–1925] and 
+can be used to describe an electric current that is switched on at time t − 0.) Its graph is 
+shown in Figure 5.
+There is no single number that Hstd approaches as t approaches 0, so limtl 0 Hstd does 
+not exist. However, as t approaches 0 from the left, Hstd approaches 0. As t approaches 0 
+from the right, Hstd approaches 1. We indicate this situation symbolically by writing 
+limtl02 Hstd − 0    and    limtl01 Hstd − 1
+and we call these one-sided limits. The notation t l 02 indicates that we consider only 
+values of t that are less than 0. Likewise, t l 01 indicates that we consider only values 
+of t that are greater than 0.
+2
+limxla2 fsxd − L
+and say that the left-hand limit of fsxd as x approaches a [or the limit of fsxd as x
+approaches a from the left] is equal to L if we can make the values of fsxd arbitrarily close to L by restricting x to be sufficiently close to a with x less than a.
+We write
+limxla1 fsxd − L
+and say that the right-hand limit of fsxd as x approaches a [or the limit of fsxd as x
+approaches a from the right] is equal to L if we can make the values of fsxd arbitrarily
+close to L by restricting x to be sufficiently close to a with x greater than a.
+t
+y
+1
+0
+FIGURE 5
+The Heaviside function
+Intuitive Definition of One-Sided Limits We write
+SECTION 2.2  The Limit of a Function 87
+For instance, the notation x l 52 means that we consider only x , 5, and x l 51
+means that we consider only x . 5. Definition 2 is illustrated in Figure 6. 
+0 x
+y
+L
+0 x a x
+y
+ƒ L
+x
+ƒ
+x a_ x a+ (a) lim ƒ=L (b) lim ƒ=L
+a
+Notice that Definition 2 differs from Definition 1 only in that we require x to be less 
+than (or greater than) a. By comparing these definitions, we see that the following is true.
+3 lim
+xla fsxd − L  if and only if   lim
+xla2 fsxd − L   and   lim
+xla1 fsxd − L
+EXAMPLE 4 The graph of a function t is shown in Figure 7. 
+y
+0 x
+y=©
+1 2 3 4 5
+1
+3
+4
+Use the graph to state the values (if they exist) of the following:
+(a) lim
+xl22 tsxd      (b) lim
+xl21 tsxd      (c) lim
+xl2 tsxd
+(d) lim
+xl52 tsxd      (e) lim
+xl51 tsxd      (f) lim
+xl5 tsxd
+SOLUTION Looking at the graph we see that the values of tsxd approach 3 as x
+approaches 2 from the left, but they approach 1 as x approaches 2 from the right. 
+Therefore
+(a) lim
+xl22 tsxd − 3    and    (b) lim
+xl21 tsxd − 1
+(c) Since the left and right limits are different, we conclude from (3) that limxl2 tsxd
+does not exist.
+The graph also shows that
+(d) lim
+xl52 tsxd − 2    and    (e) lim
+xl51 tsxd − 2
+(f) This time the left and right limits are the same and so, by (3), we have
+lim
+xl5 tsxd − 2
+Despite this fact, notice that ts5d ± 2. ■
+FIGURE 6
+FIGURE 7
+88 CHAPTER 2 Limits and Derivatives
+■	How Can a Limit Fail to Exist?
+We have seen that a limit fails to exist at a number a if the left- and right-hand limits are 
+not equal (as in Example 4). The next two examples illustrate additional ways that a limit 
+can fail to exist. 
