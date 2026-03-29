@@ -7,6 +7,7 @@ A personal repository documenting my progress through various mathematics textbo
 - **Stewart Calculus (9th Edition)** - Currently working through Chapter 2
 - **Euclid's Elements** - Working through Book I propositions
 - **Probability** - Following Steve Brunton's YouTube series
+- **Linear Algebra Done Right (Axler, 4th Ed.)** - Starting Chapter 1
 
 ## Structure
 
@@ -19,6 +20,11 @@ math-journey/
 ├── geometry/
 │   └── euclid-six-books/
 │       └── book-01-plane-geometry.ipynb
+├── linear-algebra/
+│   └── axler-linear-algebra-done-right/
+│       └── chapter-01-vector-spaces/
+│           └── exercises/
+│               └── section-1A-exercises.ipynb
 ├── probability/
 │   └── probability-notes.ipynb
 ├── precalculus/
@@ -33,6 +39,7 @@ math-journey/
 - OpenStax Precalculus
 - Khan Academy
 - Euclid's Elements (Casey's edition)
+- Linear Algebra Done Right, Sheldon Axler (4th Edition)
 
 ## Progress Tracking
 
@@ -49,3 +56,9 @@ math-journey/
 |------|---------|--------|
 | Euclid's Elements | Book I, Props 1-3 | Done |
 | Euclid's Elements | Book I, Props 4-48 | Not Started |
+
+### Linear Algebra
+
+| Book | Section | Status |
+|------|---------|--------|
+| Axler - Linear Algebra Done Right | Ch 1A - R^n and C^n | In Progress |
