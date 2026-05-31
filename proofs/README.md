@@ -5,11 +5,14 @@ My study notes on mathematical proofs and reasoning.
 ## Current Resources
 
 - **Proofs: A Long-Form Mathematics Textbook** - Jay Cummings
+- **Discrete Mathematics with Applications** - Susanna Epp
 
 ## Structure
 
 ```
 proofs/
+├── susanna-epp-discrete-mathematics-with-applications/
+│   └── chapter-04-elementary-number-theory-and-methods-of-proof.ipynb
 └── jay-cummings-proofs/
     └── chapter-01-intuitive-proofs.ipynb
 ```
@@ -18,6 +21,7 @@ proofs/
 
 | Book | Chapter | Topics | Status |
 |------|---------|--------|--------|
+| Susanna Epp | Ch 4 - Elementary Number Theory and Methods of Proof | Floor function, proof as justification, even/odd, prime/composite, existence, counterexample, direct proof | Done |
 | Jay Cummings | Ch 1 - Intuitive Proofs | Chessboard/domino problems, pigeonhole principle, existence proofs, parity, coloring | Done |
 | Jay Cummings | Ch 2 - Sets | | Not Started |
 | Jay Cummings | Ch 3 - Logic | | Not Started |
