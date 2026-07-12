@@ -4,6 +4,7 @@ My study notes on mathematical proofs and reasoning.
 
 ## Current Resources
 
+- **How to Prove It** - Daniel J. Velleman
 - **Proofs: A Long-Form Mathematics Textbook** - Jay Cummings
 - **Discrete Mathematics with Applications** - Susanna Epp
 
@@ -11,6 +12,9 @@ My study notes on mathematical proofs and reasoning.
 
 ```
 proofs/
+├── velleman-how-to-prove-it/
+│   └── chapter-01-sentential-logic/
+│       └── section-1.5-conditional-biconditional.md
 ├── susanna-epp-discrete-mathematics-with-applications/
 │   └── chapter-04-elementary-number-theory-and-methods-of-proof.ipynb
 └── jay-cummings-proofs/
@@ -21,6 +25,7 @@ proofs/
 
 | Book | Chapter | Topics | Status |
 |------|---------|--------|--------|
+| Velleman | Ch 1 - Sentential Logic | Conditional and biconditional connectives, contrapositive, converse, sufficient/necessary | Notes Added |
 | Susanna Epp | Ch 4 - Elementary Number Theory and Methods of Proof | Floor function, proof as justification, even/odd, prime/composite, existence, counterexample, direct proof | Done |
 | Jay Cummings | Ch 1 - Intuitive Proofs | Chessboard/domino problems, pigeonhole principle, existence proofs, parity, coloring | Done |
 | Jay Cummings | Ch 2 - Sets | | Not Started |

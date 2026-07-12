@@ -9,9 +9,12 @@ Axler's approach is different from most intro linear algebra courses — instead
 ## Structure
 
 ```
+better-explained-bridge.md          ← intuition from BetterExplained, anchored to Axler
 axler-linear-algebra-done-right/
 └── chapter-01-vector-spaces/
+    ├── notes.md
     └── exercises/
+        ├── complex-inverse-geometry.ipynb
         └── section-1A-exercises.ipynb
 ```
 
@@ -20,3 +23,4 @@ axler-linear-algebra-done-right/
 | Section | Topic | Status |
 |---------|-------|--------|
 | 1A | $\mathbb{R}^n$ and $\mathbb{C}^n$ | In Progress |
+| 1B | Definition of Vector Space | Notes Added |
