@@ -1,7 +1,7 @@
 # Euclid's Elements - Six Books
 
 My study notes working through the first six books of Euclid's Elements.
-
+https://www.gutenberg.org/files/21076/21076-pdf.pdf
 ## Why Euclid?
 
 Euclid's Elements is the foundation of geometry. Everything is built from simple postulates using only:
